@@ -168,7 +168,7 @@ a {
   color: var(--white);
   display: grid;
   gap: clamp(22px, 4vw, 52px);
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr);
   min-height: 82svh;
   overflow: hidden;
   padding: 110px clamp(20px, 6vw, 88px) 42px;
@@ -194,8 +194,7 @@ a {
 }
 
 .hero-content,
-.hero-meta,
-.hero-avatar {
+.hero-meta {
   position: relative;
   z-index: 2;
 }
@@ -249,27 +248,6 @@ a {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
-}
-
-.hero-avatar {
-  align-self: start;
-  aspect-ratio: 1;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 999px;
-  box-shadow: 0 24px 90px rgba(201, 21, 88, 0.18);
-  justify-self: end;
-  margin-top: 44px;
-  max-width: 150px;
-  overflow: hidden;
-  width: 100%;
-}
-
-.hero-avatar img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center 38%;
-  width: 100%;
 }
 
 .button {
