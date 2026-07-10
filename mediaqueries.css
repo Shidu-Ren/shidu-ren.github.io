@@ -62,12 +62,6 @@
     padding: 92px 18px 30px;
   }
 
-  .hero-avatar {
-    justify-self: start;
-    margin-top: 0;
-    max-width: 120px;
-  }
-
   .hero-meta {
     gap: 14px;
     grid-template-columns: 1fr;
