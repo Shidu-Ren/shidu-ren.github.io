@@ -10,13 +10,22 @@ function setHeaderState() {
 function closeMenu() {
   menuToggle.classList.remove("open");
   navLinks.classList.remove("open");
+  document.body.classList.remove("menu-open");
   menuToggle.setAttribute("aria-expanded", "false");
 }
 
 menuToggle.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
   menuToggle.classList.toggle("open", isOpen);
+  document.body.classList.toggle("menu-open", isOpen);
   menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && navLinks.classList.contains("open")) {
+    closeMenu();
+    menuToggle.focus();
+  }
 });
 
 sectionLinks.forEach((link) => {

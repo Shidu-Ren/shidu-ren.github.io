@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 76px;
 }
 
 body {
@@ -29,7 +30,21 @@ body {
   color: var(--ink);
   font-family: var(--sans);
   line-height: 1.55;
+  overflow-x: clip;
   text-rendering: optimizeLegibility;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+main,
+section {
+  min-width: 0;
+}
+
+main section[id] {
+  scroll-margin-top: 76px;
 }
 
 img {
@@ -40,6 +55,12 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }
 
 ::selection {
@@ -200,7 +221,7 @@ a {
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width: 1120px;
 }
 
 .eyebrow,
@@ -221,10 +242,14 @@ a {
 
 .hero h1 {
   font-family: var(--serif);
-  font-size: clamp(4rem, 9.2vw, 8.8rem);
+  font-size: clamp(4rem, 7.2vw, 6.8rem);
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 0.88;
+  line-height: 0.92;
+}
+
+.hero h1 span {
+  display: inline;
 }
 
 .hero-statement {
@@ -258,8 +283,10 @@ a {
   font-weight: 850;
   justify-content: center;
   letter-spacing: 0;
+  max-width: 100%;
   min-height: 46px;
   padding: 0 20px;
+  text-align: center;
   text-transform: uppercase;
   transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
@@ -358,16 +385,6 @@ a {
   object-position: center 54%;
 }
 
-@media (max-width: 760px) {
-  .photo-strip {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-strip figure {
-    height: clamp(190px, 56vw, 280px);
-  }
-}
-
 .opening-strip {
   border-bottom: 1px solid var(--line);
   padding: clamp(42px, 6vw, 76px) clamp(20px, 8vw, 124px);
@@ -416,6 +433,13 @@ a {
   margin-bottom: clamp(28px, 4.8vw, 54px);
 }
 
+.section-intro > *,
+.paper-feature > *,
+.contact-layout > *,
+.experience-grid > * {
+  min-width: 0;
+}
+
 .section-intro h2,
 .paper-copy h3,
 .project-copy h2,
@@ -442,11 +466,13 @@ a {
   border: 1px solid var(--line);
   display: grid;
   grid-template-columns: minmax(210px, 0.3fr) minmax(0, 1fr);
+  min-width: 0;
 }
 
 .paper-figure {
   align-content: center;
   border-right: 1px solid var(--line);
+  min-width: 0;
   padding: clamp(18px, 2.4vw, 30px);
 }
 
@@ -457,6 +483,7 @@ a {
 }
 
 .paper-copy {
+  min-width: 0;
   padding: clamp(28px, 4.8vw, 58px);
 }
 
