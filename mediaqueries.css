@@ -117,8 +117,17 @@
     padding: 94px 24px 32px;
   }
 
+  .hero-avatar {
+    align-self: start;
+    margin-bottom: 4px;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 112px;
+  }
+
   .hero h1 {
-    font-size: clamp(3.25rem, 7vw, 3.8rem);
+    font-size: clamp(2.75rem, 6vw, 3.25rem);
   }
 
   .hero-statement {
@@ -159,6 +168,11 @@
     padding: 84px 18px 28px;
   }
 
+  .hero-avatar {
+    margin-bottom: 18px;
+    width: 96px;
+  }
+
   .eyebrow {
     font-size: 0.68rem;
     line-height: 1.45;
@@ -167,7 +181,7 @@
   }
 
   .hero h1 {
-    font-size: clamp(2.65rem, 11vw, 3.15rem);
+    font-size: clamp(2.2rem, 9vw, 2.7rem);
     line-height: 0.92;
   }
 
@@ -411,7 +425,7 @@
 
 @media screen and (max-width: 360px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero-actions,
