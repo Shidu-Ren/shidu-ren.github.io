@@ -16,7 +16,6 @@
 
 @media screen and (max-width: 900px) {
   .section-intro,
-  .news-layout,
   .contact-layout {
     grid-template-columns: 1fr;
   }
@@ -280,13 +279,9 @@
     line-height: 1.6;
   }
 
-  .news-layout {
-    gap: 24px;
-  }
-
   .news-item {
     gap: 14px;
-    grid-template-columns: 66px minmax(0, 1fr);
+    grid-template-columns: 76px minmax(0, 1fr);
     padding: 15px 0;
   }
 

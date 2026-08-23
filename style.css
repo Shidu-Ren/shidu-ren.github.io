@@ -261,6 +261,14 @@ button:focus-visible {
   max-width: 740px;
 }
 
+.hero-statement a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.46);
+}
+
+.hero-statement a:hover {
+  border-color: currentColor;
+}
+
 .hero-intent {
   color: rgba(255, 255, 255, 0.78);
   font-size: 1rem;
@@ -464,19 +472,8 @@ button:focus-visible {
 }
 
 .news-layout {
-  display: grid;
-  gap: clamp(32px, 6vw, 92px);
-  grid-template-columns: minmax(240px, 0.55fr) minmax(0, 1fr);
-}
-
-.news-intro {
-  display: block;
-  margin-bottom: 0;
-}
-
-.news-intro p {
-  margin-top: 16px;
-  max-width: 34ch;
+  margin-left: auto;
+  max-width: 1080px;
 }
 
 .news-list {
@@ -489,7 +486,7 @@ button:focus-visible {
   border-bottom: 1px solid var(--line);
   display: grid;
   gap: clamp(20px, 3vw, 42px);
-  grid-template-columns: 76px minmax(0, 1fr);
+  grid-template-columns: 84px minmax(0, 1fr);
   padding: 18px 0;
 }
 
