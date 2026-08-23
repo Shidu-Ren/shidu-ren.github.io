@@ -16,6 +16,7 @@
 
 @media screen and (max-width: 900px) {
   .section-intro,
+  .news-layout,
   .contact-layout {
     grid-template-columns: 1fr;
   }
@@ -118,7 +119,7 @@
   }
 
   .hero h1 {
-    font-size: clamp(3.7rem, 8vw, 4.2rem);
+    font-size: clamp(3.25rem, 7vw, 3.8rem);
   }
 
   .hero-statement {
@@ -167,7 +168,7 @@
   }
 
   .hero h1 {
-    font-size: clamp(3.1rem, 13vw, 3.6rem);
+    font-size: clamp(2.65rem, 11vw, 3.15rem);
     line-height: 0.92;
   }
 
@@ -269,7 +270,7 @@
 
   .section-intro h2,
   .contact-layout h2 {
-    font-size: clamp(2.1rem, 10vw, 2.75rem);
+    font-size: clamp(1.95rem, 8.5vw, 2.4rem);
     line-height: 1;
   }
 
@@ -277,6 +278,24 @@
   .contact-copy p {
     font-size: 0.96rem;
     line-height: 1.6;
+  }
+
+  .news-layout {
+    gap: 24px;
+  }
+
+  .news-item {
+    gap: 14px;
+    grid-template-columns: 66px minmax(0, 1fr);
+    padding: 15px 0;
+  }
+
+  .news-item time {
+    font-size: 0.68rem;
+  }
+
+  .news-item p {
+    font-size: 0.92rem;
   }
 
   .paper-feature {
@@ -302,7 +321,7 @@
   }
 
   .paper-copy h3 {
-    font-size: clamp(1.62rem, 7.4vw, 2.05rem);
+    font-size: clamp(1.5rem, 6.4vw, 1.85rem);
     line-height: 1.06;
     overflow-wrap: anywhere;
   }
@@ -339,7 +358,7 @@
   }
 
   .experience-card h3 {
-    font-size: 1.65rem;
+    font-size: 1.48rem;
     line-height: 1.08;
     margin-top: 26px;
   }
@@ -362,7 +381,7 @@
   }
 
   .education-card h2 {
-    font-size: 2.35rem;
+    font-size: 2.1rem;
     line-height: 1;
   }
 
@@ -397,7 +416,7 @@
 
 @media screen and (max-width: 360px) {
   .hero h1 {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
   }
 
   .hero-actions,

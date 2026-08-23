@@ -21,6 +21,7 @@
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
   scroll-padding-top: 76px;
 }
@@ -242,7 +243,7 @@ button:focus-visible {
 
 .hero h1 {
   font-family: var(--serif);
-  font-size: clamp(4rem, 7.2vw, 6.8rem);
+  font-size: clamp(3.5rem, 5.7vw, 5.25rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.92;
@@ -254,7 +255,7 @@ button:focus-visible {
 
 .hero-statement {
   color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(1.06rem, 1.78vw, 1.42rem);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
   line-height: 1.45;
   margin-top: 24px;
   max-width: 740px;
@@ -398,7 +399,7 @@ button:focus-visible {
 }
 
 .section {
-  padding: clamp(56px, 7vw, 104px) clamp(20px, 6vw, 88px);
+  padding: clamp(52px, 6vw, 84px) clamp(20px, 6vw, 88px);
 }
 
 .section-label {
@@ -445,7 +446,7 @@ button:focus-visible {
 .project-copy h2,
 .contact-layout h2 {
   font-family: var(--serif);
-  font-size: clamp(2.25rem, 4.8vw, 4.9rem);
+  font-size: clamp(2.15rem, 3.7vw, 3.8rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.98;
@@ -455,7 +456,63 @@ button:focus-visible {
 .section-intro p {
   align-self: end;
   color: var(--muted);
-  font-size: clamp(1rem, 1.45vw, 1.16rem);
+  font-size: clamp(0.96rem, 1.1vw, 1.06rem);
+}
+
+.news-section {
+  background: var(--paper);
+}
+
+.news-layout {
+  display: grid;
+  gap: clamp(32px, 6vw, 92px);
+  grid-template-columns: minmax(240px, 0.55fr) minmax(0, 1fr);
+}
+
+.news-intro {
+  display: block;
+  margin-bottom: 0;
+}
+
+.news-intro p {
+  margin-top: 16px;
+  max-width: 34ch;
+}
+
+.news-list {
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.news-item {
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: clamp(20px, 3vw, 42px);
+  grid-template-columns: 76px minmax(0, 1fr);
+  padding: 18px 0;
+}
+
+.news-item time {
+  color: var(--raspberry);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.02em;
+}
+
+.news-item p {
+  color: var(--ink-soft);
+  font-size: clamp(0.94rem, 1.1vw, 1.03rem);
+  line-height: 1.55;
+}
+
+.news-item a {
+  border-bottom: 1px solid rgba(16, 16, 16, 0.35);
+  font-weight: 750;
+}
+
+.news-item a:hover {
+  border-color: currentColor;
 }
 
 .paper-section {
@@ -493,7 +550,7 @@ button:focus-visible {
 }
 
 .paper-copy h3 {
-  font-size: clamp(1.9rem, 3.4vw, 3.9rem);
+  font-size: clamp(1.8rem, 2.7vw, 3rem);
 }
 
 .paper-copy > p:not(.paper-venue):not(.paper-authors) {
@@ -555,7 +612,7 @@ button:focus-visible {
 .experience-card h3 {
   align-self: end;
   font-family: var(--serif);
-  font-size: clamp(1.45rem, 2.25vw, 2.42rem);
+  font-size: clamp(1.4rem, 1.8vw, 2rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.02;
@@ -596,7 +653,7 @@ button:focus-visible {
 
 .education-card h2 {
   font-family: var(--serif);
-  font-size: clamp(2rem, 4vw, 4.2rem);
+  font-size: clamp(2rem, 3.2vw, 3.4rem);
   font-weight: 400;
   line-height: 0.98;
 }
