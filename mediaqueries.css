@@ -14,6 +14,22 @@
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .paper-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .paper-figure {
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
+  }
+
+  .paper-figure img {
+    margin-inline: auto;
+    width: min(100%, 760px);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .section-intro,
   .contact-layout {
@@ -28,21 +44,8 @@
     max-width: 640px;
   }
 
-  .paper-feature,
   .kaggle-project {
     grid-template-columns: 1fr;
-  }
-
-  .paper-figure {
-    border-bottom: 1px solid var(--line);
-    border-right: 0;
-  }
-
-  .paper-figure img {
-    margin-inline: auto;
-    max-height: 320px;
-    object-fit: contain;
-    width: min(100%, 520px);
   }
 
   .contact-copy {
@@ -316,7 +319,7 @@
   }
 
   .paper-figure img {
-    max-height: 240px;
+    width: 100%;
   }
 
   .paper-copy {
