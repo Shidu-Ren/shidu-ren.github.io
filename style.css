@@ -538,7 +538,7 @@ button:focus-visible {
 .paper-feature {
   border: 1px solid var(--line);
   display: grid;
-  grid-template-columns: minmax(210px, 0.3fr) minmax(0, 1fr);
+  grid-template-columns: minmax(420px, 0.46fr) minmax(0, 0.54fr);
   min-width: 0;
 }
 
@@ -546,13 +546,27 @@ button:focus-visible {
   align-content: center;
   border-right: 1px solid var(--line);
   min-width: 0;
-  padding: clamp(18px, 2.4vw, 30px);
+  padding: clamp(22px, 3vw, 42px);
+}
+
+.paper-figure-link {
+  display: grid;
+  gap: 14px;
 }
 
 .paper-figure img {
   background: #ffffff;
   border: 1px solid rgba(16, 16, 16, 0.1);
   width: 100%;
+}
+
+.paper-figure-link span {
+  border-bottom: 1px solid currentColor;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  justify-self: start;
+  text-transform: uppercase;
 }
 
 .paper-copy {
