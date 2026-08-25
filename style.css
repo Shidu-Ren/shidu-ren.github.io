@@ -280,6 +280,10 @@ button:focus-visible {
   max-width: 740px;
 }
 
+.hero-statement + .hero-statement {
+  margin-top: 14px;
+}
+
 .hero-statement a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.46);
 }
