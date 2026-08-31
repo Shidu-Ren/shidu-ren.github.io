@@ -495,8 +495,9 @@ button:focus-visible {
 }
 
 .news-layout {
-  margin-left: auto;
+  margin-inline: auto;
   max-width: 1080px;
+  width: 100%;
 }
 
 .news-list {
