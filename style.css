@@ -542,15 +542,17 @@ button:focus-visible {
 .paper-feature {
   border: 1px solid var(--line);
   display: grid;
-  grid-template-columns: minmax(420px, 0.46fr) minmax(0, 0.54fr);
+  grid-template-columns: minmax(300px, 0.36fr) minmax(0, 0.64fr);
+  margin-inline: auto;
   min-width: 0;
+  width: min(100%, 1080px);
 }
 
 .paper-figure {
   align-content: center;
   border-right: 1px solid var(--line);
   min-width: 0;
-  padding: clamp(22px, 3vw, 42px);
+  padding: clamp(20px, 2.2vw, 26px);
 }
 
 .paper-figure-link {
@@ -575,7 +577,7 @@ button:focus-visible {
 
 .paper-copy {
   min-width: 0;
-  padding: clamp(28px, 4.8vw, 58px);
+  padding: clamp(26px, 3vw, 36px);
 }
 
 .paper-venue {
@@ -584,7 +586,8 @@ button:focus-visible {
 }
 
 .paper-copy h3 {
-  font-size: clamp(1.8rem, 2.7vw, 3rem);
+  font-size: clamp(1.6rem, 1.8vw, 1.9rem);
+  line-height: 1.03;
 }
 
 .paper-copy > p:not(.paper-venue):not(.paper-authors) {
