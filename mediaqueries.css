@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1020px) {
   .paper-feature {
     grid-template-columns: 1fr;
   }
@@ -26,7 +26,7 @@
 
   .paper-figure img {
     margin-inline: auto;
-    width: min(100%, 760px);
+    width: min(100%, 400px);
   }
 }
 
@@ -333,7 +333,7 @@
   }
 
   .paper-copy h3 {
-    font-size: clamp(1.5rem, 6.4vw, 1.85rem);
+    font-size: clamp(1.35rem, 5vw, 1.55rem);
     line-height: 1.06;
     overflow-wrap: anywhere;
   }
