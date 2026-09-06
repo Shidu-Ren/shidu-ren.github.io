@@ -216,7 +216,6 @@ button:focus-visible {
 }
 
 .hero-content,
-.hero-meta,
 .hero-avatar {
   position: relative;
   z-index: 2;
@@ -358,33 +357,6 @@ button:focus-visible {
 
 .button-muted {
   border-color: var(--line);
-}
-
-.hero-meta {
-  border-top: 1px solid rgba(255, 255, 255, 0.22);
-  display: grid;
-  gap: 18px;
-  grid-column: 1 / -1;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 46px;
-  padding-top: 20px;
-  width: min(100%, 1100px);
-}
-
-.hero-meta span {
-  color: rgba(255, 255, 255, 0.62);
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 850;
-  margin-bottom: 7px;
-  text-transform: uppercase;
-}
-
-.hero-meta strong {
-  color: rgba(255, 255, 255, 0.9);
-  display: block;
-  font-size: clamp(0.96rem, 1.3vw, 1.12rem);
-  line-height: 1.45;
 }
 
 .photo-strip {

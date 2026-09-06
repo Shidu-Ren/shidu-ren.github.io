@@ -138,10 +138,6 @@
     max-width: 650px;
   }
 
-  .hero-meta {
-    margin-top: 36px;
-  }
-
   .opening-strip,
   .section {
     padding-inline: 24px;
@@ -225,30 +221,6 @@
 
   .button-stacked {
     min-height: 50px;
-  }
-
-  .hero-meta {
-    display: block;
-    margin-top: 32px;
-    padding-top: 0;
-  }
-
-  .hero-meta div {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-    padding: 14px 0;
-  }
-
-  .hero-meta div:last-child {
-    border-bottom: 0;
-  }
-
-  .hero-meta span {
-    font-size: 0.68rem;
-    margin-bottom: 4px;
-  }
-
-  .hero-meta strong {
-    font-size: 0.94rem;
   }
 
   .photo-strip {
