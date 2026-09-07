@@ -521,6 +521,10 @@ button:focus-visible {
   width: min(100%, 1080px);
 }
 
+.paper-feature + .paper-feature {
+  margin-top: clamp(20px, 3vw, 34px);
+}
+
 .paper-figure {
   align-content: center;
   border-right: 1px solid var(--line);
