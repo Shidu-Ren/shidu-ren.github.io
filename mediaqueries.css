@@ -381,19 +381,16 @@
   }
 
   .service-item {
-    gap: 12px;
-    grid-template-columns: 1fr;
-    padding: 22px 0;
+    gap: 6px 10px;
+    padding: 16px 0;
   }
 
-  .service-year,
-  .service-role {
+  .service-item strong {
     font-size: 0.68rem;
   }
 
-  .service-item h2 {
-    font-size: 1.48rem;
-    margin-top: 8px;
+  .service-item a {
+    font-size: 1.08rem;
   }
 
   .contact-layout {
