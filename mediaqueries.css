@@ -380,6 +380,22 @@
     padding-top: 14px;
   }
 
+  .service-item {
+    gap: 12px;
+    grid-template-columns: 1fr;
+    padding: 22px 0;
+  }
+
+  .service-year,
+  .service-role {
+    font-size: 0.68rem;
+  }
+
+  .service-item h2 {
+    font-size: 1.48rem;
+    margin-top: 8px;
+  }
+
   .contact-layout {
     gap: 22px;
   }
