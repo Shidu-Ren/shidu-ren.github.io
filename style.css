@@ -699,25 +699,24 @@ button:focus-visible {
 
 .service-list {
   border-top: 1px solid var(--line);
-  list-style: none;
+  list-style-position: inside;
   margin-inline: auto;
   max-width: 1080px;
 }
 
-.service-item {
-  align-items: baseline;
-  border-bottom: 1px solid var(--line);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-  padding: 20px 0;
-}
-
-.service-item strong {
-  color: var(--muted);
+.service-heading {
+  color: var(--raspberry);
   font-size: 0.76rem;
   font-weight: 850;
+  margin: 0 auto 12px;
+  max-width: 1080px;
   text-transform: uppercase;
+}
+
+.service-item {
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  padding: 20px 0;
 }
 
 .service-item a {
@@ -725,6 +724,7 @@ button:focus-visible {
   font-family: var(--serif);
   font-size: clamp(1.12rem, 1.4vw, 1.3rem);
   line-height: 1.25;
+  margin-left: 10px;
 }
 
 .service-item a:hover {

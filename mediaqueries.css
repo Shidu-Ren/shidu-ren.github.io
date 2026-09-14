@@ -381,11 +381,10 @@
   }
 
   .service-item {
-    gap: 6px 10px;
     padding: 16px 0;
   }
 
-  .service-item strong {
+  .service-heading {
     font-size: 0.68rem;
   }
 
