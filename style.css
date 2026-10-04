@@ -560,6 +560,7 @@ button:focus-visible {
 .paper-venue {
   color: var(--raspberry);
   margin-bottom: 18px;
+  text-transform: none;
 }
 
 .paper-copy h3 {
