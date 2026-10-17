@@ -13,7 +13,7 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23101010'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' text-anchor='middle' fill='white'%3ESR%3C/text%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="style.css?v=compact-news-20261016-1" />
+    <link rel="stylesheet" href="style.css?v=collapsible-news-20261016-1" />
     <link rel="stylesheet" href="mediaqueries.css?v=compact-news-20261016-1" />
     <script type="application/ld+json">
       {
@@ -121,7 +121,7 @@
         </div>
 
         <div class="news-layout">
-          <ol class="news-list">
+          <ol class="news-list" id="news-list">
             <li class="news-item">
               <time datetime="2026-10">[2026.10]</time>
               <p>
@@ -180,6 +180,13 @@
               </p>
             </li>
           </ol>
+          <button
+            class="news-toggle"
+            type="button"
+            aria-controls="news-list"
+            aria-expanded="false"
+            hidden
+          >Show more</button>
         </div>
       </section>
 
@@ -584,6 +591,6 @@
       <p>AI research portfolio · GitHub Pages</p>
     </footer>
 
-    <script src="script.js?v=linkedin-avatar-20260822-1"></script>
+    <script src="script.js?v=collapsible-news-20261016-1"></script>
   </body>
 </html>

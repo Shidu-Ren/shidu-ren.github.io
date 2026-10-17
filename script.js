@@ -3,6 +3,34 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const sectionLinks = document.querySelectorAll(".nav-links a");
 
+const newsItems = Array.from(document.querySelectorAll("#news-list > .news-item"));
+const newsToggle = document.querySelector(".news-toggle");
+const newsPreviewLimit = 10;
+
+if (newsToggle && newsItems.length > newsPreviewLimit) {
+  const olderNews = newsItems.slice(newsPreviewLimit);
+  const setNewsExpanded = (expanded) => {
+    olderNews.forEach((item) => {
+      item.hidden = !expanded;
+    });
+    newsToggle.setAttribute("aria-expanded", String(expanded));
+    newsToggle.textContent = expanded
+      ? "Show less"
+      : `Show more (${olderNews.length})`;
+  };
+
+  setNewsExpanded(false);
+  newsToggle.hidden = false;
+  newsToggle.addEventListener("click", () => {
+    const expanded = newsToggle.getAttribute("aria-expanded") !== "true";
+    setNewsExpanded(expanded);
+    if (!expanded) {
+      newsToggle.focus({ preventScroll: true });
+      newsToggle.scrollIntoView({ block: "nearest" });
+    }
+  });
+}
+
 function setHeaderState() {
   header.classList.toggle("scrolled", window.scrollY > 16);
 }
