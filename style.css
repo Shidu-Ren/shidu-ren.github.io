@@ -481,9 +481,9 @@ button:focus-visible {
   align-items: baseline;
   border-bottom: 1px solid var(--line);
   display: grid;
-  gap: clamp(20px, 3vw, 42px);
+  gap: 20px;
   grid-template-columns: 84px minmax(0, 1fr);
-  padding: 18px 0;
+  padding: 10px 0;
 }
 
 .news-item time {
@@ -496,7 +496,7 @@ button:focus-visible {
 .news-item p {
   color: var(--ink-soft);
   font-size: clamp(0.94rem, 1.1vw, 1.03rem);
-  line-height: 1.55;
+  line-height: 1.45;
 }
 
 .news-item a {

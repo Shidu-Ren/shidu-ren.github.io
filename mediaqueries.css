@@ -269,9 +269,9 @@
   }
 
   .news-item {
-    gap: 14px;
+    gap: 10px;
     grid-template-columns: 76px minmax(0, 1fr);
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
   .news-item time {
