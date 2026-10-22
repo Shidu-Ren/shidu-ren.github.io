@@ -426,6 +426,14 @@ button:focus-visible {
   padding: clamp(52px, 6vw, 84px) clamp(20px, 6vw, 88px);
 }
 
+/* Keep section labels and content on the same centered reading column. */
+.section > * {
+  width: 100%;
+  max-width: 1080px;
+  margin-inline: auto;
+  min-width: 0;
+}
+
 .section-label {
   align-items: center;
   border-top: 1px solid var(--line);
