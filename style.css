@@ -271,6 +271,27 @@ button:focus-visible {
   display: inline;
 }
 
+.hero-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin: 12px 0 18px;
+}
+
+.hero-socials a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.hero-socials a:hover {
+  opacity: 0.75;
+}
+
 .hero-statement {
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(1rem, 1.4vw, 1.2rem);
